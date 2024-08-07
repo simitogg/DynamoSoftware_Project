@@ -110,7 +110,6 @@ namespace DynamoSoft_Task.Services
                     Symbol = symbol.GetProperty("symbol").GetString(),
                     Price = Decimal.Parse(symbol.GetProperty("price_usd").GetString()),
                 };
-                data.Price = data.Price + rnd.Next(100,1000);
                 cryptoData[data.Symbol] = data;
             }
 
